@@ -34,8 +34,7 @@ jobs:
             ${{ env.IMAGE_NAME}}
             ghcr.io/${{ env.IMAGE_NAME}}
           tags: |
-            latest
-            ${{ github.GITHUB_SHA}}
+            type=sha
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
