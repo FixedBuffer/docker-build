@@ -37,4 +37,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: fixedbuffer/hello:latest,fixedbuffer/hello:${GITHUB_SHA}
+          tags: fixedbuffer/hello:latest,fixedbuffer/hello:${{ github.GITHUB_SHA }}
