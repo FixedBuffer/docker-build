@@ -11,8 +11,7 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-env:
-  REGISTRY: ghcr.io
+
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
@@ -38,4 +37,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: fixedbuffer/hello:latest,fixedbuffer/hello:${{ GITHUB_SHA }}
+          tags: fixedbuffer/hello:latest,fixedbuffer/hello:${GITHUB_SHA}
