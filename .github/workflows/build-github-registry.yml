@@ -16,7 +16,7 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
-  build-and-push-image:
+  build-and-push-image-to-ghcr.io:
     runs-on: ubuntu-latest
     permissions:
       contents: read
