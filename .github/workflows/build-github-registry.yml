@@ -34,6 +34,7 @@ jobs:
             ${{ env.IMAGE_NAME}}
             ghcr.io/${{ env.IMAGE_NAME}}
           tags: |
+            latest
             type=sha
 
       - name: Set up Docker Buildx
