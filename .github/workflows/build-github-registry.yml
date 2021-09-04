@@ -25,6 +25,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - run: echo ${{github.event_name}} ${{ github.event_name  != 'pull_request' }}
+
       - name: Docker meta
         id: meta
         uses: docker/metadata-action@v3
