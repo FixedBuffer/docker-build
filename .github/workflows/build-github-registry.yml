@@ -15,7 +15,7 @@ env:
   IMAGE_NAME: fixedbuffer/hello
 
 jobs:
-  build-and-push-image-to-ghcr:
+  build-and-push-images:
     runs-on: ubuntu-latest
     permissions:
       contents: read
